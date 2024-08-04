@@ -1,21 +1,15 @@
 # AWS Light Sail Demo
 
-Deployed a .NET Core Web API application to LightSail Container Service
+Deployed a .NET Core Web API application to LightSail Container Service.    
 
-# Docker Commands
+## Article
+https://hexquote.com/amazon-lightsail-virtual-cloud-server/    
 
--	docker image build -t dotnettokengen .
+## Docker Commands
 
--	docker run --rm --name dotnettokengen -p 80:80 dotnettokengen
+`docker image build -t dotnettokengen .`    
+`docker run --rm --name dotnettokengen -p 80:80 dotnettokengen`    
 
-# aws cli (LightSail) command
+## aws cli (LightSail) command
 
--	aws lightsail push-container-image --region eu-central-1 --service-name container-service-1 --label dotnettokengen --image dotnettokengen
-
-
-
-
-
-
-
-
+`aws lightsail push-container-image --region eu-central-1 --service-name container-service-1 --label dotnettokengen --image dotnettokengen`
